@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple-color: hsl(257, 40%, 49%);
+  --magenta-color: hsl(300, 69%, 71%);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.img-bg {
+  background-image: url(../Images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--purple-color);
+  position: relative;
+}
+
+.img-bg .logo img {
+  width: 300px;
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  .img-bg .logo img{
+    width: 250px;
+  }
+}
+.img-bg .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 1100px; */
+  gap: 40px;
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  .img-bg .container {
+    flex-direction: column;
+  }
+}
+.img-bg .container img {
+  width: 800px;
+  height: 500px;
+}
+@media (max-width: 767px) {
+  .img-bg .container img {
+    max-width: 100%;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 160px;
+  }
+}
+.img-bg .container .info {
+  margin-top: -100px;
+}
+@media (max-width: 767px) {
+  .img-bg .container .info {
+    text-align: center;
+  }
+}
+
+.img-bg .container .info h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 767px) {
+  .img-bg .container .info h1 {
+    font-size: 23px;
+  }
+}
+
+.img-bg .container .info P {
+  color: white;
+  line-height: 1.8;
+  font-size: 13px;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .img-bg .container .info p {
+    font-size: 16px;
+  }
+}
+.img-bg .container .info button {
+  background-color: white;
+  padding: 20px 80px;
+  margin-top: 20px;
+  border-radius: 40px;
+  font-size: 20px;
+  color: var(--purple-color);
+}
+@media (max-width: 767px) {
+  .img-bg .container .info button {
+    font-size: 16px;
+    padding: 15px 100px;
+  }
+}
+.img-bg .container .info button:hover {
+  background-color: var(--magenta-color);
+  color: white;
+}
+
+.img-bg .icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  padding-bottom: 10px;
+  /* position: absolute;
+  right: 0;
+  bottom: 20px; */
+}
+@media (max-width: 767px) {
+  .img-bg .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+   .img-bg .icons i {
+    font-size: 14px;
+   }
+}
+.img-bg .icons i {
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
